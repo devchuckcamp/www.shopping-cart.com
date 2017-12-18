@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+.example-icon {
+    padding: 0 16px;
+}
+  
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.mat-toolbar-row:first-child{
+    height: 20px;
+}
