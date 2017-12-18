@@ -13,3 +13,20 @@
 .mat-toolbar-row:first-child{
     height: 20px;
 }
+
+.navbar-ul.mat-primary {
+    background: #c2185b!important;
+    color: rgba(255,255,255,.87);
+}
+
+
+
+.border-top-1{
+    border-top: 1px solid #fafafa;
+}
+
+body{
+    background-color: #ccc;
+}
+/* CHUCKSTRAP OVERWRITE */
+@import '~chuckstrap/css/chuckstrap.min.css';
