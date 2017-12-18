@@ -1,14 +1,117 @@
-<mat-toolbar color="primary">
+<nav class="navbar sticky-top navbar-dark bg-dark mat-primary navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="nav navbar-nav ml-auto">
+          <li  class="nav-item active"><a class="nav-link" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li  class="nav-item active"><a class="nav-link" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+</nav>
+
+<!-- Logo Search Product/Categories -->
+<nav class="navbar sticky-top navbar-dark bg-dark navbar-ul mat-primary navbar-expand-lg border-top-1" 
+        color="color">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            <img src="../assets/curis-logo.png" alt="">
+          </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+          </li>
+      </ul>
+
+    </div>
+</nav>
+
+
+<!-- Product Categories -->
+<nav class="navbar sticky-top navbar-dark bg-dark mat-primary navbar-expand-lg border-top-1">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+          <li  class="nav-item active"><a class="nav-link" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li  class="nav-item active"><a class="nav-link" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+</nav>
+
+
+<!-- <mat-toolbar color="primary">
 
   <mat-toolbar-row class="header-toolbar-row">
     <span>Shoppin Cart</span>
     
     <span class="example-spacer"></span>
     
-    <button mat-button>Shop</button>
-    <button mat-button>Account</button>
-    <button mat-button>Sign-in/Signup</button>
+    <button mat-button matTooltip="Go Shopping!">Shop</button>
+    <button mat-button matTooltip="My Account!">Account</button>
+    <button mat-button matTooltip="Sell your product!">Sign-in/Signup</button>
 
   </mat-toolbar-row>
 
-</mat-toolbar>
+</mat-toolbar> -->
+
+<!-- <mat-toolbar color="dark">
+  
+    <mat-toolbar-row class="header-toolbar-row">
+      
+      <button 
+        mat-button 
+        matTooltip="Top Deals!"
+        [matMenuTriggerFor]="menu"    
+      >
+        Top Deals
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+
+      <button mat-button matTooltip="Computer/Laptop/Phone">Electronic</button>
+      <button mat-button matTooltip="Furnichure">Home & Applicances</button>
+      <button mat-button matTooltip="Fashion for Men">Men's Fashion</button>
+      <button mat-button matTooltip="Fashion for Women">Women's Fashion</button>
+      <button mat-button matTooltip="Stay on shape">Health & Beauty</button>
+      <button mat-button matTooltip="Get your ride">Sports & Motor</button>
+      <button mat-button matTooltip="Cherish the moment">Books, Travel & Music</button>
+  
+    </mat-toolbar-row>
+  
+</mat-toolbar> -->
