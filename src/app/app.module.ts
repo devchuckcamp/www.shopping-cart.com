@@ -8,12 +8,12 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-// import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 // import { CarouselModule,CarouselComponent,SlideComponent,CarouselConfig } from 'angular-bootstrap-md/carousel';
 
 
 //Pages
-// import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './home/home.component';
 // import { ContactEmailComponent } from './contact/email.component';
 // import { ContactPhoneComponent } from './contact/phone.component';
 // import { WorkComponent } from './work/work.component';
@@ -57,7 +57,7 @@ import {
 @NgModule({
   declarations: [
     AppComponent,
-    // HomeComponent,
+    HomeComponent,
     // ContactEmailComponent,
     // ContactPhoneComponent,
     // WorkComponent,
@@ -105,7 +105,7 @@ import {
     FlexLayoutModule,
     ToasterModule,
     NgbModule.forRoot(),
-    // AppRoutingModule
+    AppRoutingModule
   ],
   providers: [
     // CarouselConfig
