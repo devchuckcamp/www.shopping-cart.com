@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
             console.log((platformLocation as any).location);
             console.log((platformLocation as any).location.href);
             console.log((platformLocation as any).location.origin);
-            this.meImg = (platformLocation as any).location.href + 'assets/img/me.jpg';
+            this.meImg = (platformLocation as any).location.href + 'assets/curis-logo.png';
         }
 
     ngOnInit() { 
