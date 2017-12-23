@@ -2,20 +2,19 @@ import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/catch'; ``
 import 'rxjs/add/operator/map';
 import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/toPromise';
 
 //Model
-//import { Credential } from '../../model/user/';
+import { Credential } from '../../models/user/';
 
 @Injectable()
-export class ProductService {
+export class UserService {
 
     private clientID = 'newclient';
     private Bearer: any;
-    // credentials: Credential;
+    credentials: Credential;
     private userID = '';
 
     constructor(private http: Http) {
