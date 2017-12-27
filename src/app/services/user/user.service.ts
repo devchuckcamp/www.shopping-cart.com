@@ -82,6 +82,7 @@ export class UserService {
         let header = new Headers({ 'Accept': 'application/json' });
         header.append('Content-type', 'application/json');
 
+
         return new RequestOptions({ headers: header });
     }
 
