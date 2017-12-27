@@ -82,6 +82,7 @@ export class UserService {
         let header = new Headers({ 'Accept': 'application/json' });
         header.append('Content-type', 'application/json');
 
+
         return new RequestOptions({ headers: header });
     }
 
@@ -92,6 +93,7 @@ export class UserService {
         headers.append('Access-Control-Allow-Origin', '*');
         headers.append('Allow_Headers', ' Allow, Access-Control-Allow-Origin, Content-type, Accept');
         headers.append('Allow', 'GET,POST,PUT,DELETE,OPTION');
+
 
         return new RequestOptions({ headers: headers });
 
