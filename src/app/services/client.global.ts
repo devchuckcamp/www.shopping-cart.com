@@ -14,7 +14,6 @@ export class ClientGlobalRoutesService {
         }
         console.log(this.Bearer); 
     }
-
     //Client Credentials
     getClientKey(){
         var data = JSON.stringify({
@@ -24,5 +23,7 @@ export class ClientGlobalRoutesService {
         })
         return data;
     }
+
+    
 
 }
