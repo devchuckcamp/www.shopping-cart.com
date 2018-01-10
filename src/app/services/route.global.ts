@@ -150,7 +150,6 @@ export class GlobalRoutesService {
         return data;
     }
 
-
     private jt() {
        
         let UserBearer = this.Bearer;
@@ -164,7 +163,6 @@ export class GlobalRoutesService {
              
             return new RequestOptions({ headers: headers });
     }
-
     private plain() {
             let header = new Headers({'Accept':'application/json'});
             header.append('Content-type','application/json');
