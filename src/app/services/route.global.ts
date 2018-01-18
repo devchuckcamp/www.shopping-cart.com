@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/toPromise';
 import * as xml2js from 'xml2js';
-import { User } from '../../model/user/';
+import { User } from '../models/user/user';
 
 //GLobal
 import { ClientGlobalRoutesService } from './client.global';
