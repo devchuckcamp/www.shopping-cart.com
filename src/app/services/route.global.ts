@@ -21,8 +21,8 @@ export class GlobalRoutesService {
     
     private userID = '';
     public mimsPort='8080';
-    public apiPort='8000';
-    public host='localhost';
+    public apiPort='8181';
+    public host='43.226.6.141';
     public protocol='http://';
     public googleLogin=this.protocol+this.host+':'+this.apiPort+'/glogin';
 
@@ -41,7 +41,7 @@ export class GlobalRoutesService {
                 username:username,
                 password:password
             });
-        return this.http.post('http://0.0.0.0:8000/api/v1/authenticate',
+        return this.http.post(this.protocol+this.host+':'+this.apiPort+'/api/v1/authenticate',
             body
             ,this.jt())
             .map((response: Response) => 
@@ -171,5 +171,5 @@ export class GlobalRoutesService {
     }
 
 
-    
+
 }
