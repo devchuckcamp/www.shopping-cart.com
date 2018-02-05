@@ -21,8 +21,8 @@ export class GlobalRoutesService {
     
     private userID = '';
     public mimsPort='8080';
-    public apiPort='8181';
-    public host='43.226.6.141';
+    public apiPort='8080';
+    public host='127.0.0.1';
     public protocol='http://';
     public googleLogin=this.protocol+this.host+':'+this.apiPort+'/glogin';
 
@@ -167,13 +167,12 @@ export class GlobalRoutesService {
             let header = new Headers({'Accept':'application/json'});
             header.append('Content-type','application/json');
             
-            
             return new RequestOptions({ headers: header });
     }
 
 
 
-
+    
 
 
 
