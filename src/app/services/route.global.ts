@@ -26,6 +26,7 @@ export class GlobalRoutesService {
     public protocol='http://';
     public googleLogin=this.protocol+this.host+':'+this.apiPort+'/glogin';
 
+    
     constructor(
         private http: Http,
         private clientGlobalRoutesService:ClientGlobalRoutesService
