@@ -22,7 +22,5 @@ export class ClientGlobalRoutesService {
             "grant_type" : "password",
         })
         return data;
-    }
-
-    
+    }    
 }
