@@ -23,6 +23,7 @@ export class UserService {
         }
 
     }
+    
     getUser(id: number) {
         this.Bearer = localStorage.getItem("currentUser");
         return this.http.get('http://localhost:8000/api/v1/users/' + id 
